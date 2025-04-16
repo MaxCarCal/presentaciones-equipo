@@ -1,4 +1,5 @@
 import javax.swing.*;
+<<<<<<< HEAD
 import java.sql.*;
 
 public class MapaFrame extends JFrame {
@@ -46,3 +47,30 @@ public class MapaFrame extends JFrame {
         }
     }
 }
+=======
+import java.awt.*;
+
+public class MapaFrame extends JFrame {
+    public MapaFrame(String zona) {
+        setTitle("Mapa de Puebla - " + zona);
+        setSize(400, 300);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLocationRelativeTo(null);
+
+        JPanel panel = new JPanel(new BorderLayout());
+        JLabel lblZona = new JLabel("Zona seleccionada: " + zona, SwingConstants.CENTER);
+        panel.add(lblZona, BorderLayout.CENTER);
+
+        JButton btnVolver = new JButton("Volver");
+        panel.add(btnVolver, BorderLayout.SOUTH);
+
+        btnVolver.addActionListener(e -> {
+            new SeleccionZonaFrame();
+            dispose();
+        });
+
+        add(panel);
+        setVisible(true);
+    }
+}
+>>>>>>> ee49fee1c12aed07cf89a3dff38104bb261ea20f
