@@ -1,5 +1,5 @@
 # presentaciones-equipo
-cualquier cosa 2pre
+cualquier cosa 
 sarahí
 presentacion 
 
