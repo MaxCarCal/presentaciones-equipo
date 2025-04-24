@@ -14,7 +14,8 @@ public class MenuDelitos extends JFrame {
         String[] delitos = {"Robo de autopartes", "Asalto", "Secuestro", "Todos"};
         comboDelitos = new JComboBox<>(delitos);
 
-        String[] areas = {"A", "B", "C", "Todas"};
+        // Modificación aquí: Cambiamos a zonas de la A a la G
+        String[] areas = {"A", "B", "C", "D", "E", "F", "G", "Todas"};
         comboAreas = new JComboBox<>(areas);
 
         JButton btnMostrarMapa = new JButton("Mostrar Mapa");
